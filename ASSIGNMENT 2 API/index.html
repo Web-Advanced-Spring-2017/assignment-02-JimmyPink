@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My API Project</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+  <body>
+  <h2>My API Project</h2>
+<!-- <a class="waves-effect waves-light btn"><input type="text" id="Autocomplete" placeholder = " Enter any place in the world..."></a> -->
+ <div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">
+          What be yo Query
+        </div>
+        <div id="type-selector" class="pac-controls">
+          <input type="checkbox" name="type" id="changetype-all" checked="checked">
+          <label for="changetype-all">All</label>
+
+          <input type="checkbox" name="type" id="changetype-establishment">
+          <label for="changetype-establishment">Establishments</label>
+
+          <input type="checkbox" name="type" id="changetype-address">
+          <label for="changetype-address">Addresses</label>
+
+         <!--  <input type="radio" name="type" id="changetype-geocode">
+          <label for="changetype-geocode">Geocodes</label> -->
+        </div>
+        <div id="strict-bounds-selector" class="pac-controls">
+          <input type="checkbox" id="use-strict-bounds" value=""> 
+          <label for="use-strict-bounds">Strict Bounds</label>
+        </div>
+      </div>
+    <div id="pac-container">
+        <a class="waves-effect waves-light"><input id="pac-input" type="text"
+            placeholder="Enter a location"></a>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon">
+      <span id="place-name"  class="title"></span><br>
+      <span id="place-address"></span>
+    </div>
+
+   
+
+    <div id="map"></div>  
+
+
+
+ 
+
+<!-- <a class="waves-effect waves-light btn"> a-->
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIUruuhg7KnkT-LtDnYmyEsUWDRg1QCqI&callback=initMap" async defer></script> -->
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+  async defer
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIUruuhg7KnkT-LtDnYmyEsUWDRg1QCqI&libraries=places&callback=initMap" async defer> </script> 
+
+ </body>
+</html>
